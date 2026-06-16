@@ -12,6 +12,9 @@ venv/
 .DS_Store
 __MACOSX/
 
+# PUB
+[PUB] India_runs_data_and_ai_challenge/
+
 # Outputs
 feature_extraction_output/candidate_features.csv
 feature_extraction_output/*.csv
