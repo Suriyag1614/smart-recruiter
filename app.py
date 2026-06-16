@@ -163,7 +163,7 @@ if st.session_state.df_results is not None:
     df = st.session_state.df_results
     
     st.divider()
-    st.markdown("### 🏆 Top Candidate Matches")
+    st.markdown("### 🏆 Top 20 Candidate Matches")
     
     # High-level metrics
     m1, m2, m3 = st.columns(3)
