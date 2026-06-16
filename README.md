@@ -1,3 +1,14 @@
+---
+title: Smart Recruiter
+emoji: 🧠
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: 1.36.0
+app_file: app.py
+pinned: false
+---
+
 # Intelligent Candidate Discovery & Ranking Engine
 
 ## Project Overview
@@ -30,8 +41,9 @@ smart-recruiter/
 │   └── validate_ranking.py     # (Experimental) Validation & Audit Script
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # Project overview & instructions
-├── ARCHITECTURE.md             # System design & workflows
-└── SUBMISSION_NOTES.md         # Tradeoffs, assumptions & explainability
+├── docs/
+│   ├── ARCHITECTURE.md         # System design & workflows
+│   └── SUBMISSION_NOTES.md     # Tradeoffs, assumptions & explainability
 ```
 
 ## Installation

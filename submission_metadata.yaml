@@ -3,7 +3,7 @@ team_name: "Dark Horses"
 primary_contact:
   name: "SURIYANARAYANAN GURUSAMY"
   email: "suriyanarayanang16@gmail.com"
-  phone: "9342049233"
+  phone: "+91 9342049233"
 
 team_members:
   - name: "SURIYANARAYANAN GURUSAMY"
@@ -12,7 +12,7 @@ team_members:
 
 github_repo: "https://github.com/suriyag1614/smart-recruiter"
 
-sandbox_link: "https://huggingface.co/spaces/PLACEHOLDER/smart-recruiter"
+sandbox_link: "https://huggingface.co/spaces/suriyag1614/smart-recruiter"
 
 reproduce_command: "python src/feature_extraction.py"
 
