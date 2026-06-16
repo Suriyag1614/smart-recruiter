@@ -9,9 +9,6 @@ team_members:
   - name: "SURIYANARAYANAN GURUSAMY"
     email: "suriyanarayanang16@gmail.com"
     role: "ML Engineer"
-  - name: "Mohamed Shafik N"
-    email: "shafiknasar@gmail.com"
-    role: "Data Engineer"
 
 github_repo: "https://github.com/suriyag1614/smart-recruiter"
 
@@ -23,18 +20,19 @@ compute:
   platform: "Local Machine"
   cpu_cores: 8
   ram_gb: 16
-  python_version: "3.9"
-  os: "Windows"
+  python_version: "3.12.10"
+  os: "Windows 11"
   uses_gpu_for_inference: false
   has_network_during_ranking: false
   pre_computation_required: false
   pre_computation_time_minutes: 0
 
 ai_tools_used:
-  - "Other"
+  - "ChatGPT"
+  - "Gemini"
 
 ai_usage_summary: |
-  Used an AI assistant for code review, documentation generation, and structural refactoring. No candidate data was sent to hosted APIs during ranking.
+  Used ChatGPT and Gemini for code review, debugging assistance and documentation drafting. Candidate ranking was performed locally using the provided dataset and locally executed embedding models. No external AI service participated in ranking decisions.
 
 methodology_summary: |
   Two-pass hybrid ranking system. Pass 1 streams JSON lines to filter non-target titles and high service-company overlap, retaining the top 2,000 using a bounded min-heap. Pass 2 loads these candidates into memory and computes dense vector embeddings using all-MiniLM-L6-v2 against the job description. The final score blends semantic similarity with hard heuristic requirements (YOE, Production ML experience, recruitability). Output is natively explainable via exposed feature sub-scores.
@@ -43,5 +41,5 @@ declarations:
   read_submission_spec: true
   code_is_original_work: true
   no_collusion: true
-  honeypot_check_done: false
+  honeypot_check_done: true
   reproduction_tested: true

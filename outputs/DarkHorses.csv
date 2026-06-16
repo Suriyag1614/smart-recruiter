@@ -1,0 +1,101 @@
+candidate_id,rank,score,reasoning
+CAND_0055905,1,0.8087,Relevant title (Senior Machine Learning Engineer) with 8.1 YOE; proven production ML experience; strong background in vector databases/search.
+CAND_0071974,2,0.7296,Relevant title (Senior AI Engineer) with 7.8 YOE; proven production ML experience.
+CAND_0044883,3,0.7262,Relevant title (AI Engineer) with 6.3 YOE; strong background in vector databases/search; high notice period/availability risk.
+CAND_0018499,4,0.7101,Relevant title (Senior Machine Learning Engineer) with 7.2 YOE; proven production ML experience; strong background in vector databases/search.
+CAND_0002025,5,0.6954,Relevant title (Senior AI Engineer) with 5.9 YOE; proven production ML experience.
+CAND_0081846,6,0.6894,Relevant title (Lead AI Engineer) with 6.7 YOE; strong background in vector databases/search.
+CAND_0041611,7,0.68,Relevant title (Staff Machine Learning Engineer) with 6.4 YOE; strong background in vector databases/search; high notice period/availability risk.
+CAND_0077337,8,0.6734,Relevant title (Staff Machine Learning Engineer) with 7.0 YOE.
+CAND_0079387,9,0.6676,Relevant title (AI Engineer) with 6.9 YOE; strong background in vector databases/search.
+CAND_0007411,10,0.6658,Relevant title (Senior Machine Learning Engineer) with 8.0 YOE; proven production ML experience; high notice period/availability risk.
+CAND_0080766,11,0.6569,Relevant title (Staff Machine Learning Engineer) with 8.8 YOE; proven production ML experience; high notice period/availability risk.
+CAND_0005538,12,0.6567,Relevant title (Senior AI Engineer) with 5.9 YOE; high notice period/availability risk.
+CAND_0051292,13,0.6349,Relevant title (Applied ML Engineer) with 5.2 YOE; strong background in vector databases/search.
+CAND_0058575,14,0.6207,Relevant title (AI Engineer) with 5.8 YOE; strong background in vector databases/search; high notice period/availability risk.
+CAND_0046525,15,0.6156,Relevant title (Senior Machine Learning Engineer) with 6.1 YOE.
+CAND_0068811,16,0.6156,Relevant title (Applied ML Engineer) with 8.0 YOE.
+CAND_0094759,17,0.6149,Relevant title (Lead AI Engineer) with 8.6 YOE; high notice period/availability risk.
+CAND_0078508,18,0.6132,Relevant title (AI Research Engineer) with 5.2 YOE; high notice period/availability risk.
+CAND_0043958,19,0.611,Relevant title (AI Research Engineer) with 6.7 YOE; high notice period/availability risk.
+CAND_0098846,20,0.6079,Relevant title (AI Engineer) with 7.6 YOE.
+CAND_0008425,21,0.6076,Title is Senior NLP Engineer with 7.8 YOE; proven production ML experience; high notice period/availability risk.
+CAND_0043228,22,0.6076,Relevant title (Applied ML Engineer) with 6.8 YOE; high notice period/availability risk.
+CAND_0033861,23,0.6007,Title is Senior NLP Engineer with 8.0 YOE; proven production ML experience; high notice period/availability risk.
+CAND_0058412,24,0.6003,Relevant title (Senior Software Engineer (ML)) with 6.6 YOE; high notice period/availability risk.
+CAND_0090300,25,0.5998,Relevant title (AI Research Engineer) with 5.3 YOE; high notice period/availability risk.
+CAND_0069905,26,0.599,Relevant title (Applied ML Engineer) with 6.6 YOE; strong background in vector databases/search; high notice period/availability risk.
+CAND_0011327,27,0.597,Relevant title (AI Research Engineer) with 6.3 YOE.
+CAND_0088878,28,0.5957,Relevant title (Senior Software Engineer (ML)) with 4.4 YOE; high notice period/availability risk.
+CAND_0040178,29,0.5943,Relevant title (ML Engineer) with 5.0 YOE.
+CAND_0033179,30,0.5933,Relevant title (AI Research Engineer) with 6.9 YOE.
+CAND_0066376,31,0.593,Relevant title (Applied ML Engineer) with 5.7 YOE; high notice period/availability risk.
+CAND_0067866,32,0.5917,Relevant title (Senior Software Engineer (ML)) with 6.4 YOE.
+CAND_0075249,33,0.5914,Relevant title (Applied ML Engineer) with 6.2 YOE.
+CAND_0074735,34,0.5895,Relevant title (Applied ML Engineer) with 5.5 YOE; high notice period/availability risk.
+CAND_0055992,35,0.5889,Relevant title (AI Engineer) with 16.9 YOE; strong background in vector databases/search.
+CAND_0068351,36,0.5888,Relevant title (Lead AI Engineer) with 6.4 YOE; high notice period/availability risk.
+CAND_0083307,37,0.5885,Relevant title (Search Engineer) with 7.8 YOE; strong background in vector databases/search; high notice period/availability risk.
+CAND_0013393,38,0.5879,Relevant title (ML Engineer) with 5.3 YOE.
+CAND_0004402,39,0.587,Relevant title (AI Research Engineer) with 6.0 YOE.
+CAND_0049538,40,0.5848,Relevant title (Applied ML Engineer) with 5.8 YOE; high notice period/availability risk.
+CAND_0014683,41,0.5844,Relevant title (Senior Software Engineer (ML)) with 5.6 YOE; high notice period/availability risk.
+CAND_0060315,42,0.5842,Relevant title (Senior Software Engineer (ML)) with 5.4 YOE; high notice period/availability risk.
+CAND_0022852,43,0.5823,Relevant title (AI Research Engineer) with 5.4 YOE; high notice period/availability risk.
+CAND_0008049,44,0.5818,Relevant title (ML Engineer) with 6.3 YOE; high notice period/availability risk.
+CAND_0097896,45,0.5814,Relevant title (AI Research Engineer) with 4.8 YOE; high notice period/availability risk.
+CAND_0018925,46,0.5808,Relevant title (AI Research Engineer) with 5.8 YOE; high notice period/availability risk.
+CAND_0030550,47,0.5805,Relevant title (AI Research Engineer) with 5.2 YOE; high notice period/availability risk.
+CAND_0030031,48,0.5802,Relevant title (AI Engineer) with 5.7 YOE; high notice period/availability risk.
+CAND_0060054,49,0.5802,Relevant title (AI Engineer) with 6.4 YOE; high notice period/availability risk.
+CAND_0000422,50,0.5801,Relevant title (AI Research Engineer) with 6.3 YOE; high notice period/availability risk.
+CAND_0016163,51,0.58,Relevant title (Applied ML Engineer) with 6.7 YOE; high notice period/availability risk.
+CAND_0016170,52,0.5799,Relevant title (AI Research Engineer) with 6.8 YOE; high notice period/availability risk.
+CAND_0067643,53,0.5791,Relevant title (AI Research Engineer) with 6.0 YOE; high notice period/availability risk.
+CAND_0088049,54,0.5785,Relevant title (Junior ML Engineer) with 5.9 YOE; high notice period/availability risk.
+CAND_0049771,55,0.5782,Relevant title (AI Research Engineer) with 5.0 YOE; high notice period/availability risk.
+CAND_0046064,56,0.5776,Title is Senior NLP Engineer with 8.9 YOE; proven production ML experience; strong background in vector databases/search.
+CAND_0054123,57,0.5759,Relevant title (Applied ML Engineer) with 4.7 YOE; high notice period/availability risk.
+CAND_0088025,58,0.5759,Relevant title (Staff Machine Learning Engineer) with 8.6 YOE; high notice period/availability risk.
+CAND_0028793,59,0.5758,Relevant title (Search Engineer) with 7.2 YOE; strong background in vector databases/search; high notice period/availability risk.
+CAND_0030953,60,0.5743,Relevant title (Search Engineer) with 7.8 YOE; strong background in vector databases/search; high notice period/availability risk.
+CAND_0092706,61,0.5743,Relevant title (AI Research Engineer) with 5.8 YOE; high notice period/availability risk.
+CAND_0097176,62,0.5737,Relevant title (ML Engineer) with 5.9 YOE.
+CAND_0093547,63,0.5728,Relevant title (Senior Machine Learning Engineer) with 2.9 YOE; proven production ML experience; high notice period/availability risk.
+CAND_0002037,64,0.5727,Relevant title (ML Engineer) with 5.5 YOE; high notice period/availability risk.
+CAND_0043860,65,0.5718,Relevant title (Junior ML Engineer) with 6.1 YOE.
+CAND_0012837,66,0.5717,Relevant title (Junior ML Engineer) with 6.4 YOE.
+CAND_0092255,67,0.5717,Relevant title (ML Engineer) with 5.2 YOE.
+CAND_0025640,68,0.5714,Relevant title (AI Research Engineer) with 5.6 YOE.
+CAND_0005260,69,0.5712,Title is Senior NLP Engineer with 5.2 YOE; proven production ML experience; strong background in vector databases/search; high notice period/availability risk.
+CAND_0056262,70,0.5707,Relevant title (Junior ML Engineer) with 6.0 YOE; high notice period/availability risk.
+CAND_0039308,71,0.5705,Relevant title (AI Research Engineer) with 5.6 YOE; high notice period/availability risk.
+CAND_0032271,72,0.5704,Relevant title (AI Research Engineer) with 6.6 YOE; high notice period/availability risk.
+CAND_0085851,73,0.5702,Relevant title (ML Engineer) with 7.0 YOE.
+CAND_0012798,74,0.5696,Relevant title (AI Research Engineer) with 5.1 YOE; high notice period/availability risk.
+CAND_0061156,75,0.5693,Relevant title (Senior Software Engineer (ML)) with 6.0 YOE; high notice period/availability risk.
+CAND_0008202,76,0.569,Relevant title (Senior Software Engineer (ML)) with 5.7 YOE; high notice period/availability risk.
+CAND_0008517,77,0.5669,Relevant title (AI Research Engineer) with 5.6 YOE; high notice period/availability risk.
+CAND_0064888,78,0.5669,Relevant title (ML Engineer) with 5.8 YOE.
+CAND_0046526,79,0.5665,Relevant title (ML Engineer) with 5.5 YOE; high notice period/availability risk.
+CAND_0020877,80,0.5659,Relevant title (Applied ML Engineer) with 5.1 YOE; strong background in vector databases/search; high notice period/availability risk.
+CAND_0005269,81,0.5658,Relevant title (Senior Software Engineer (ML)) with 6.1 YOE.
+CAND_0015528,82,0.5649,Relevant title (Applied ML Engineer) with 7.4 YOE; high notice period/availability risk.
+CAND_0061479,83,0.5649,Relevant title (ML Engineer) with 5.0 YOE; high notice period/availability risk.
+CAND_0070525,84,0.5648,Relevant title (Senior Software Engineer (ML)) with 5.4 YOE.
+CAND_0065927,85,0.5637,Relevant title (Senior Software Engineer (ML)) with 6.5 YOE; high notice period/availability risk.
+CAND_0058688,86,0.5633,Relevant title (AI Engineer) with 6.7 YOE.
+CAND_0064331,87,0.5621,Relevant title (Senior Software Engineer (ML)) with 4.2 YOE; high notice period/availability risk.
+CAND_0069248,88,0.5618,Relevant title (AI Research Engineer) with 5.4 YOE; high notice period/availability risk.
+CAND_0018888,89,0.5616,Relevant title (AI Research Engineer) with 6.5 YOE; high notice period/availability risk.
+CAND_0066309,90,0.5609,Relevant title (Senior Software Engineer (ML)) with 5.3 YOE; high notice period/availability risk.
+CAND_0015643,91,0.5602,Relevant title (AI Research Engineer) with 5.8 YOE; high notice period/availability risk.
+CAND_0088438,92,0.5601,Relevant title (Senior Software Engineer (ML)) with 6.6 YOE; high notice period/availability risk.
+CAND_0089362,93,0.5599,Relevant title (Data Engineer) with 7.1 YOE; proven production ML experience; high notice period/availability risk.
+CAND_0050454,94,0.5594,Relevant title (AI Engineer) with 6.8 YOE.
+CAND_0078669,95,0.5592,Relevant title (ML Engineer) with 6.3 YOE; high notice period/availability risk.
+CAND_0002120,96,0.5591,Relevant title (ML Engineer) with 6.5 YOE.
+CAND_0055139,97,0.559,Relevant title (ML Engineer) with 6.9 YOE; high notice period/availability risk.
+CAND_0020224,98,0.5588,Relevant title (Data Engineer) with 7.3 YOE; proven production ML experience; high notice period/availability risk.
+CAND_0024620,99,0.5586,Relevant title (AI Engineer) with 5.9 YOE.
+CAND_0067535,100,0.5582,Relevant title (Junior ML Engineer) with 6.8 YOE.

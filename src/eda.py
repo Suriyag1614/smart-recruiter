@@ -4,8 +4,8 @@ import statistics
 from datetime import datetime
 
 # Define file paths
-INPUT_JSONL = "[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/candidates.jsonl"
-OUTPUT_DIR = "eda_output"
+INPUT_JSONL = "data/candidates.jsonl"
+OUTPUT_DIR = "outputs/eda"
 
 # Create output directory if it doesn't exist
 import os

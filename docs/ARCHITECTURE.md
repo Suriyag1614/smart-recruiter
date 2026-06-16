@@ -19,7 +19,7 @@ flowchart TD
     J --> K[Score Aggregation \n Semantic + Heuristics]
     K --> L[candidate_features.csv]
     K --> M[top_100.csv]
-    K --> N[submission.csv]
+    K --> N[[participant_id].csv]
 ```
 
 ## Pass 1: Metadata Screening Workflow

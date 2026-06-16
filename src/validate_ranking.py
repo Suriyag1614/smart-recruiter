@@ -5,7 +5,7 @@ from collections import Counter
 
 # --- CONFIGURATION ---
 TOP_100_CSV = "outputs/top_100.csv"
-INPUT_JSONL = "[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/candidates.jsonl"
+INPUT_JSONL = "data/candidates.jsonl"
 DETAILED_CSV = "outputs/top_100_detailed.csv"
 AUDIT_REPORT = "outputs/ranking_audit.md"
 

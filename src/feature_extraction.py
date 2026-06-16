@@ -7,14 +7,14 @@ from docx import Document
 from sentence_transformers import SentenceTransformer, util
 
 # --- CONFIGURATION & PARAMETERS ---
-INPUT_JSONL = "[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/candidates.jsonl"
-INPUT_DOCX = "[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/job_description.docx"
+INPUT_JSONL = "data/candidates.jsonl"
+INPUT_DOCX = "data/job_description.docx"
 OUTPUT_DIR = "outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 FEATURE_CSV = os.path.join(OUTPUT_DIR, "candidate_features.csv")
 TOP_100_CSV = os.path.join(OUTPUT_DIR, "top_100.csv")
-SUBMISSION_CSV = os.path.join(OUTPUT_DIR, "submission.csv")
+SUBMISSION_CSV = os.path.join(OUTPUT_DIR, "DarkHorses.csv")
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"  # <-- Explicitly defined here
 REFERENCE_YEAR = 2026
 

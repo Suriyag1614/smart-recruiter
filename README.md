@@ -47,8 +47,8 @@ Ensure you have Python 3.9+ installed.
 To reproduce the submission CSV end-to-end within the challenge compute budget:
 
 1. Place the input files in their expected directory:
-   * Candidates: `[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/candidates.jsonl`
-   * Job Description: `[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/job_description.docx`
+   * Candidates: `data/candidates.jsonl`
+   * Job Description: `data/job_description.docx`
 2. Run the core reproduction command:
    ```bash
    python src/feature_extraction.py
@@ -80,7 +80,7 @@ This formula heavily weights Semantic Similarity (28%), while strongly rewarding
 ## Outputs
 * **`outputs/candidate_features.csv`**: Contains the complete extracted feature set and scores for the top evaluated cohort (for debugging and review).
 * **`outputs/top_100.csv`**: Contains the top 100 candidates with all extracted features.
-* **`outputs/submission.csv`**: The official submission deliverable matching the 4-column spec (`candidate_id`, `rank`, `score`, `reasoning`). Rename this to your participant ID (e.g., `team_xxx.csv`) before uploading.
+* **`outputs/[participant_id].csv`**: The official submission deliverable matching the 4-column spec (`candidate_id`, `rank`, `score`, `reasoning`). Rename this to your participant ID (e.g., `team_xxx.csv`) before uploading.
 
 ## Future Improvements
 * **Advanced RAG integration**: Dynamically querying LLMs to justify individual candidate ranks.
