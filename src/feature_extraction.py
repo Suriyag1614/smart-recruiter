@@ -50,7 +50,13 @@ VECTOR_TERMS = [
 
 def extract_jd_text(docx_path):
     """Extracts raw text from the provided Word document or returns a fallback."""
-    if os.path.exists(docx_path):
+    if isinstance(docx_path, str) and os.path.exists(docx_path):
+        try:
+            doc = Document(docx_path)
+            return "\n".join([p.text for p in doc.paragraphs if p.text.strip()])
+        except Exception:
+            pass
+    elif not isinstance(docx_path, str):
         try:
             doc = Document(docx_path)
             return "\n".join([p.text for p in doc.paragraphs if p.text.strip()])
@@ -177,6 +183,90 @@ def calculate_metadata_scores(candidate):
     }
 
 
+def calculate_final_score(meta, sem_sim):
+    return (
+        sem_sim * 0.28 +
+        meta["title_relevance"] * 0.15 +
+        meta["experience_fit"] * 0.10 +
+        meta["production_ml_score"] * 0.15 +
+        meta["retrieval_domain_score"] * 0.15 +
+        meta["vector_score"] * 0.10 +
+        meta["skill_heuristic"] * 0.05 +
+        meta["product_company_score"] * 0.01 +
+        meta["recruitability_score"] * 0.01
+    )
+
+
+def generate_reasoning(meta, sem_sim):
+    reasoning_parts = []
+    if meta["title_relevance"] >= 0.7:
+        reasoning_parts.append(f"Relevant title ({meta['profile_title']}) with {meta['years_of_experience']} YOE")
+    else:
+        reasoning_parts.append(f"Title is {meta['profile_title']} with {meta['years_of_experience']} YOE")
+    
+    if sem_sim > 0.6:
+        reasoning_parts.append(f"strong semantic alignment ({sem_sim:.2f})")
+    
+    if meta["production_ml_score"] > 0.5:
+        reasoning_parts.append("proven production ML experience")
+        
+    if meta["vector_score"] > 0.5:
+        reasoning_parts.append("strong background in vector databases/search")
+
+    if meta["recruitability_score"] < 0.8:
+        reasoning_parts.append("high notice period/availability risk")
+
+    return "; ".join(reasoning_parts) + "."
+
+
+def rank_candidates_in_memory(candidates, jd_text, model):
+    if not candidates:
+        return []
+    
+    processed_candidates = []
+    for candidate in candidates:
+        meta = calculate_metadata_scores(candidate)
+        processed_candidates.append(meta)
+    
+    jd_embedding = model.encode(jd_text, convert_to_tensor=True)
+    texts_to_embed = [c["career_text"] for c in processed_candidates]
+    embeddings = model.encode(texts_to_embed, batch_size=128, show_progress_bar=False, convert_to_tensor=True)
+    similarities = util.cos_sim(embeddings, jd_embedding).cpu().numpy().flatten()
+    
+    final_output_rows = []
+    for i, meta in enumerate(processed_candidates):
+        sem_sim = max(0.0, min(1.0, float(similarities[i])))
+        final_score = calculate_final_score(meta, sem_sim)
+        reasoning = generate_reasoning(meta, sem_sim)
+        
+        final_output_rows.append({
+            "candidate_id": meta["candidate_id"],
+            "anonymized_name": meta["anonymized_name"] ,
+            "score": round(final_score, 4),
+            "final_score": round(final_score, 4),
+            "reasoning": reasoning,
+            "profile_title": meta["profile_title"],
+            "years_of_experience": meta["years_of_experience"],
+            "current_company": meta["current_company"],
+            "semantic_similarity": round(sem_sim, 4),
+            "title_relevance": round(meta["title_relevance"], 4),
+            "experience_fit": round(meta["experience_fit"], 4),
+            "retrieval_domain_score": round(meta["retrieval_domain_score"], 4),
+            "vector_score": round(meta["vector_score"], 4),
+            "production_ml_score": round(meta["production_ml_score"], 4),
+            "skill_heuristic": round(meta["skill_heuristic"], 4),
+            "product_company_score": round(meta["product_company_score"], 4),
+            "recruitability_score": round(meta["recruitability_score"], 4)
+        })
+        
+    final_output_rows.sort(key=lambda x: (-x["final_score"], x["candidate_id"]))
+
+    for rank, row in enumerate(final_output_rows, start=1):
+        row["rank"] = rank
+        
+    return final_output_rows
+
+
 def execute_pipeline():
     print("Starting Safe Two-Pass Filtering Pipeline...")
     
@@ -233,38 +323,10 @@ def execute_pipeline():
     for i, meta in enumerate(high_potential_candidates):
         sem_sim = max(0.0, min(1.0, float(similarities[i])))
         
-        final_score = (
-    sem_sim * 0.28 +
-    meta["title_relevance"] * 0.15 +
-    meta["experience_fit"] * 0.10 +
-    meta["production_ml_score"] * 0.15 +
-    meta["retrieval_domain_score"] * 0.15 +
-    meta["vector_score"] * 0.10 +
-    meta["skill_heuristic"] * 0.05 +
-    meta["product_company_score"] * 0.01 +
-    meta["recruitability_score"] * 0.01
-    )
+        final_score = calculate_final_score(meta, sem_sim)
 
         # Generate reasoning based on evidence
-        reasoning_parts = []
-        if meta["title_relevance"] >= 0.7:
-            reasoning_parts.append(f"Relevant title ({meta['profile_title']}) with {meta['years_of_experience']} YOE")
-        else:
-            reasoning_parts.append(f"Title is {meta['profile_title']} with {meta['years_of_experience']} YOE")
-        
-        if sem_sim > 0.6:
-            reasoning_parts.append(f"strong semantic alignment ({sem_sim:.2f})")
-        
-        if meta["production_ml_score"] > 0.5:
-            reasoning_parts.append("proven production ML experience")
-            
-        if meta["vector_score"] > 0.5:
-            reasoning_parts.append("strong background in vector databases/search")
-
-        if meta["recruitability_score"] < 0.8:
-            reasoning_parts.append("high notice period/availability risk")
-
-        reasoning = "; ".join(reasoning_parts) + "."
+        reasoning = generate_reasoning(meta, sem_sim)
 
         final_output_rows.append({
             "candidate_id": meta["candidate_id"],
