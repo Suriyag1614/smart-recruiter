@@ -1,0 +1,26 @@
+# Dataset
+*.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Mac
+.DS_Store
+__MACOSX/
+
+# Outputs
+feature_extraction_output/candidate_features.csv
+feature_extraction_output/*.csv
+outputs/*.csv
+
+# HuggingFace
+.cache/
+huggingface/
+
+# IDE
+.vscode/
+.idea/
