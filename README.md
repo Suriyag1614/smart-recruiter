@@ -92,7 +92,7 @@ This formula heavily weights Semantic Similarity (28%), while strongly rewarding
 ## Outputs
 * **`outputs/candidate_features.csv`**: Contains the complete extracted feature set and scores for the top evaluated cohort (for debugging and review).
 * **`outputs/top_100.csv`**: Contains the top 100 candidates with all extracted features.
-* **`outputs/[participant_id].csv`**: The official submission deliverable matching the 4-column spec (`candidate_id`, `rank`, `score`, `reasoning`). Rename this to your participant ID (e.g., `team_xxx.csv`) before uploading.
+* **`outputs/submission.csv`**: The official submission deliverable matching the 4-column spec (`candidate_id`, `rank`, `score`, `reasoning`). Rename this to your participant ID (e.g., `team_xxx.csv`) before uploading.
 
 ## Future Improvements
 * **Advanced RAG integration**: Dynamically querying LLMs to justify individual candidate ranks.
